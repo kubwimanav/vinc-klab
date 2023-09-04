@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="./jss.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="gutter"></div>
+        <article class="generator">
+          <h1 class="heading">Make  a card!!</h1>
+          <h1 class="heading">============</h1>
+          <section>
+            <label class="toLabel" for="to">To:</label>
+          <input class="toInput" type="text" id="inputTo">
+          </section>
+          
+      <section>
+          <label for="from">From:</label>
+            <input type="text" id="inputFrom">
+          </section>
+      <section>
+          <label>Subject/title</label>
+          <select id="inputOccation">
+          <option value="New year">new year</options>
+          <option value="birthday"> Birthday</option>
+          <option value="christmas has finished Bro">Xmass</option>
+          </select>
+        </section>
+        <section>
+          <label for="message">
+        Personal Message:
+      </label>
+          <input type="text" id="inputMessage">
+          </section>
+          <button id="createCard"> Create Card</button>
+        </article>
+      
+      <div class="gutter"></div>
+      
+        <article class="card">
+      
+          <section class="to">To: <span id="cardTo"></span></section>
+          <div class="message" id="cardMessage">
+            <h1>testing</h1>
+          </div>
+          <section class="from">From:
+            <span id="cardFrom"></span>
+          </section>
+          <div class="pattern"></div>
+        </article>
+      </div>
+      <div class="gutter"></div>
+</body>
+</html>

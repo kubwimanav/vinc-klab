@@ -1,0 +1,86 @@
+/* $background-color: rgb(55,139,41);
+$font-color: lighten(invert($background-color), 10%);
+$font-color-lighter: lighten(invert($background-color), 30%);
+$primary-color:  #ff0000;
+$accent-color: #74d680; */
+
+section {
+  margin-bottom: 1em;
+}
+.toInput {
+    border-color: #2c98f0;
+    width: 150px;
+    height: 20px;
+    border-radius: 6px;
+}
+#inputFrom {
+    border-color: #2c98f0;
+    width: 150px;
+    height: 20px;
+    border-radius: 6px;
+}
+select {
+    border-color: #2c98f0;
+    width: 150px;
+    height: 20px;
+    border-radius: 6px;
+}
+#inputMessage{
+    border-color: #2c98f0;
+    width: 150px;
+    height: 20px;
+    border-radius: 6px;
+}
+body{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#createCard{
+    font-size: 30px;
+    background-color: rgb(90, 90, 228);
+    border-radius: 5px;
+    /* width: 30px; */
+}
+/* select{
+    width: 190px;
+    height: 30px;
+} */
+
+.container {
+  margin: 0.02em;
+  display: grid;
+  grid-template-columns:  0.5fr 2fr 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    "generator gutter card"
+}
+
+.card {
+  font-style: italic;
+  margin: 1em auto;
+  padding: 20px;
+  background: white;
+  border: 30px solid #3B0404;
+  color: #000;
+  border-radius: 5px;
+}
+
+.message {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.font-color {
+  /* color: $font-color; */
+  color: black;
+}
+.from {
+  text-align: right;
+}
+
+.pattern {
+  height: 20px;
+  background-image: linear-gradient(90deg);
+  /* background-size: 15px; */
+  /* border-radius:20px; */
+  /* border- radius: 20px; */
+}
