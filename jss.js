@@ -6,6 +6,7 @@
     inputFromEl: document.getElementById("inputFrom"),
     inputOccationEl: document.getElementById("inputOccation"),
     inputMessageEl: document.getElementById("inputMessage"),
+    inputMessageEl: document.getElementById("inputM"),
     cardToEl: document.getElementById("cardTo"),
     cardFromEl: document.getElementById("cardFrom"),
     cardMessageEl: document.getElementById("cardMessage"),
