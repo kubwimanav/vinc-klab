@@ -9,11 +9,13 @@
     <script defer src="./jss.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="gutter"></div>
-        <article class="generator">
-          <h1 class="heading">Make your card!!</h1>
-          <h1 class="heading">============</h1>
+    <div class="contain">
+        <div class="generator">
+          <div>
+           <p class="heading">Make your card!!</p>
+          <p class="heading">============</p> 
+          </div>
+          
           <section>
             <label class="toLabel" for="to">To:</label>
           <input class="toInput" type="text" id="inputTo">
@@ -24,36 +26,33 @@
             <input type="text" id="inputFrom">
           </section>
       <section>
-          <label>Subject/title</label>
+          <label>Subject/Title</label>
           <select id="inputOccation">
           <option value="New year">new year</options>
           <option value="birthday"> Birthday</option>
           <option value="christmas has finished Bro">Xmass</option>
           </select>
         </section>
-        <section>
+        <section name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
           <label for="message">
         Personal Message:
       </label><textarea type="text" id="inputM"></textarea>
-          
-          </section>
+        </section>
           <button id="createCard"> Create Card</button>
-        </article>
+        </div>
       
-      <div class="gutter"></div>
       
-        <article class="card">
+        <div class="card">
       
           <section class="to">To: <span id="cardTo"></span></section>
           <div class="message" id="cardMessage">
-            <h1>testing</h1>
+            <h1>Testing</h1>
           </div>
           <section class="from">From:
             <span id="cardFrom"></span>
           </section>
           <div class="pattern"></div>
-        </article>
+        </div>
       </div>
-      <div class="gutter"></div>
 </body>
 </html>

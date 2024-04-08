@@ -1,98 +1,61 @@
-/* Default styles for larger screens */
-section {
-  margin-bottom: 1em;
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.toInput,
-#inputFrom,
-select,
-#inputMessage {
-  border-color: #2c98f0;
-  width: 150px;
-  height: 20px;
-  border-radius: 6px;
-}
-#inputM{
-  border-color: #2c98f0;
-  border-radius: 6px;
-  width: 180px;
-  height: 40px;
+
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1F0DA;
+  height: 97vh;
+  gap: 40px;
 }
 
-body {
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-#createCard {
-  font-size: 30px;
-  background-color: rgb(90, 90, 228);
+.generator{
+  flex-basis: 20%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background-color: #D4E7C5;
+}
+button{
+  margin-top: 10px;
+  width: 25rem;
+  height: 35px;
   border-radius: 5px;
+  border: 1px solid black;
+  
 }
-
-.container {
-  margin: 0.02em;
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr;
-  grid-template-areas: "generator gutter card";
-}
-.container label,
-h1 {
-  color: #2c98f0;
-}
-.card {
-  font-style: italic;
-  margin: 1em auto;
-  padding: 20px;
-  background: white;
-  border: 30px solid #3B0404;
-  color: #000;
+input{
+ height: 35px;
   border-radius: 5px;
+  border: 1px solid black;
 }
-
-.message {
-  text-align: center;
-  text-transform: capitalize;
+select{
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
-
-.font-color {
-  color: black;
+textarea{
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
-
-.from {
-  text-align: right;
-}
-
-.pattern {
-  height: 20px;
-  background-image: linear-gradient(90deg);
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens here */
-  body {
-    font-size: 16px;
-  }
-
-  .toInput,
-  #inputFrom,
-  select,
-  #inputMessage {
-    width: 30%; /* Take up full width */
-    margin-bottom: 10px; /* Add some spacing between elements */
-  }
-
-  #createCard {
-    font-size: 24px;
-  }
-
-  .container {
-    grid-template-columns: 1fr; /* Single column layout on smaller screens */
-    grid-template-areas:
-      "generator"
-      "gutter"
-      "card";
-  }
+.card{
+  flex-basis: 30%;
+ height: 83vh;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: #BFD8AF;
 }
